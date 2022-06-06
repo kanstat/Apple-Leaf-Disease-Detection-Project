@@ -44,7 +44,7 @@ STEPS INVOLVED
   expanded by data augmentation technology to simulate changes in lighting, exposure, angle, and noise
   during the preprocessing step of apple leaf images.
  
-4.Data Normalization:
+4. Data Normalization:
    Considering that the deep neural network is very sensitive to the input feature range, a large
    range of eigenvalues will cause instability during model training [25]. In order to improve the CNN
    convergence speed and learn subtle differences between images, the dataset is normalized. For each
