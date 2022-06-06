@@ -4,7 +4,7 @@ However, the existing research lacks an accurate and fast detector of apple dise
 industry becuase their is a problem of overfitting of data. So, i am trying to propose a deep learning approach with a new dropblock
 regularisation method that is based on improved convolutional neural networks (CNNs) for the early detection of apple leaf diseases.
 
-ABOUT THE DATASET
+#ABOUT THE DATASET
 
 The dataset used for this project has been taken from Science Data Bank- Dataset which can be found here 
 (https://www.scidb.cn/en/detail?dataSetId=0e1f57004db842f99668d82183afd578).
@@ -12,7 +12,7 @@ The data used for this project is situated in the folder named “ATLDSD” in t
 The Data fed for the modeling is of Apple Leaves. For training purpose Alternaria leaf spot, Brown spot,Grey spot, 
 and Rust are four common types of apple leaf diseases used.
 
-PROPERTIES OF IMAGES
+#PROPERTIES OF IMAGES
 
 Type of File : JPG File.
 Dimensions : 256 * 256.
@@ -22,7 +22,7 @@ Horizontal Resolution : 96 dpi.
 Vertical Resolution : 96 dpi.
 Bit Depth : 24.
 
-STEPS INVOLVED
+#STEPS INVOLVED
 
 1. Collecting the Dataset: 
   All the pictures of apple leaf diseases were collected from four different apple experimental
