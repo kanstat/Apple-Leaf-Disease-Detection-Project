@@ -64,36 +64,6 @@ Bit Depth : 24.
   and eventually the network learns a set of parameters which best fit the classification task. The result 
   obtained is a vector of final probabilities for each class.
 
-7. Training :
-  Training is done on the train dataset there are various parameters which affects the training of dataset such as optimiser,
-  loss fuction, regularisation, gradient decisent, metrices etc. 
-  According to Golnaz Ghiasi et al.(file:///D:/papers/apple/dropblock%20main1810.12890v1.pdf) Deep neural nets work well when they have a large
-  number ofparameters and are trained with a massive amount of regularization
-  and noise, such as weight decay and dropout. Though the first biggest success of dropout was associated with convolutional 
-  networks,recent convolutional architectures rarely use dropout.
-  But main drawback of dropout is that it drops out features randomly. While this can be effective for fully connected layers,
-  it is less effective for convolutional layers, where features are correlated spatially. When the features are correlated, 
-   even with dropout, information about the input can still be sent to the next layer, which causes the networks to overfit. 
-  This intuition suggests that a more structured form of dropout is needed to better regularize convolutional networks.
-  "DropBlock, a structured form of dropout, that is particularly effective to
-  regularize convolutional networks. In DropBlock, features in a block, i.e., a contiguous region of a
-  feature map, are dropped together. "
 
-8. Making dropblock function using an algorihtm:
-  New Regularization Technique for Convolutional Layers.
-    
-    Pseudocode:
-    1: Input:output activations of a layer (A), block_size, γ, mode
-    2: if mode == Inference then
-    3: return A
-    4: end if
-    5: Randomly sample mask M: Mi,j ∼ Bernoulli(γ)
-    6: For each zero position Mi,j , create a spatial square mask with the center being Mi,j , the width,
-        height being block_size and set all the values of M in the square to be zero (see Figure 2).
-    7: Apply the mask: A = A × M
-    8: Normalize the features: A = A × count(M)/count_ones(M)
-    (https://arxiv.org/pdf/1810.12890v1.pdf)
- 9. Prediction :
- So, here i am trying to measure the accuracy of my model with dropout regularization and dropblock regularization.
  
  
